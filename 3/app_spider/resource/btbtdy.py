@@ -12,7 +12,7 @@ def processing_list():
         div_list = li.find_all('div')
         if 'name' in div_list[0]['class']:
             data = {
-                'href': "http://www.btbtdy.net/" + div_list[0].a['href'],
+                'href': "http://www.btbtdy.net" + div_list[0].a['href'],
                 'title': div_list[0].a.text,
                 'source_type': div_list[4].text,
             }
